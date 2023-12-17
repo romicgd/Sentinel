@@ -1,0 +1,3 @@
+AuditLogs
+| where OperationName == "Add member to group" or OperationName == "Remove member from group"
+| where TargetResources[1].id == '<your_group_id_here>' 
